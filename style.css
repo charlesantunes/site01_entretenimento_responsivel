@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #16041b;
+}
+
+/* Começa a header*/
+.header-top{
+    background-color: #66127d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+.header-top img{
+    width: 250px;
+}
+h1{
+    font-size: 1.7rem;;
+}
+.navegation, .navegation ul{
+    padding: 0.6em;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;    
+    list-style: none;
+}
+.menu-amburgue img{
+    width: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bot{
+    position: relative;
+}
+.header-bot figcaption{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 80vh;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.header-bot img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+
+/* Começa a main*/
+main{
+    margin-left: 1vw;
+}
+#filme,#series,#animes{
+    margin-top: 2vh;
+}
+.line{
+    width: 300px;
+    height: 1px;
+    background-color: white;
+}
+.fig-filmes, .fig-series, .fig-animes{
+   
+    width: 100%;
+    height: 52vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.fig-filmes img, .fig-series img, .fig-animes img{
+    width: 190px;
+    height: 47vh;
+    object-fit: cover;  
+    
+}
+
+/*Navegação*/
+a{
+    text-decoration: none;
+    transition: 0.5s all;
+}
+a:hover{
+    color: yellow;
+    font-size: 1.1rem;
+}
+main a:hover img{
+    transition: 0.5s all;
+    width: 22vw;
+    height: 54vh;
+}
+footer a:hover img{
+    transition: 0.5s all;
+    width: 5vw;    
+}
+
+/* Começa o footer*/
+footer h2, p{
+    text-align: center;    
+}
+.navegation-footer ul{
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;    
+    list-style: none;
+}
+.sec-footer{
+    display: flex;
+    justify-content: center;
+}
+.sec-footer ul{
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.ul-footer li img{
+    width: 4vw;
+    object-fit: cover;
+}
+footer P{
+    background: black;
+    padding: 1em;
+}
+
+/*@media*/
+@media(max-width:1000px){
+    h1{
+        font-size: 1.4rem;;
+    }
+    .fig-filmes, .fig-series, .fig-animes{
+        width: 100%;
+        height: 40vh;   
+    }
+    .fig-filmes img, .fig-series img, .fig-animes img{
+        width: 150px;
+        height: 35vh;        
+    }
+    main a:hover img{
+        width: 21vw;
+        height: 38vh;
+    }  
+}
+@media(max-width:800px){
+    h1{
+        font-size: 1rem;;
+    }
+    .fig-filmes, .fig-series, .fig-animes{
+        width: 100%;
+        height: 31vh;   
+    }
+    .fig-filmes img, .fig-series img, .fig-animes img{
+        width: 125px;
+        height: 28vh;        
+    }
+    main a:hover img{
+        width: 20vw;
+        height: 31vh;
+    }  
+}
+@media(max-width:670px){
+    .header-top img{
+        width: 160px;
+    }
+    h1{
+        display: flex;
+        font-size: 0.7rem;;
+    }
+    .navegation ul{
+        display: none;  
+    }
+    .menu-amburgue img{
+        width: 50px;
+        display: flex;
+    }
+    .header-bot figcaption{
+        font-size: 1.3rem;
+        top: 38vh;
+    }
+    .header-bot img{
+        width: 100%;
+        height: 45vh;
+    }
+    .fig-filmes, .fig-series, .fig-animes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500vh;  
+    }
+
+    .fig-filmes img, .fig-series img, .fig-animes img{
+        width: 60vw;
+        height: 95vh;        
+    }
+    main a:hover img{
+        width: 70vw;
+        height: 90vh;
+    }  
+}
+@media(max-width:425px){
+    .header-top img{
+        width: 126px;
+    }
+    h1{
+        display: flex;
+        font-size: 0.5rem;;
+    }
+    .menu-amburgue img{
+        width: 38px;
+        display: flex;
+    }
+    .header-bot figcaption{
+        font-size: 0.9rem;
+        top: 38vh;
+    }
+
+    .fig-filmes, .fig-series, .fig-animes{
+        width: 100%;
+        height: 337vh;  
+    }
+
+    .fig-filmes img, .fig-series img, .fig-animes img{
+        width: 80vw;
+        height: 65vh;         
+    }
+}
