@@ -232,9 +232,9 @@ footer P{
     }
 
     .fig-filmes img, .fig-series img, .fig-animes img{
-        margin-top: 20px;
-        width: 80vw;
-        height: 90vh;         
+        margin-top:30px;
+        width: 85vw;
+        height: 85vh;         
     }
     .header-bot figcaption{  
         top: 48vh;
