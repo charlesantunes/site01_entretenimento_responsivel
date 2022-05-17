@@ -187,7 +187,7 @@ footer P{
     }
     .header-bot figcaption{
         font-size: 1.3rem;
-        top: 38vh;
+        top: 48vh;
     }
     .header-bot img{
         width: 100%;
@@ -236,6 +236,9 @@ footer P{
         margin-top: 20px;
         width: 80vw;
         height: 90vh;         
+    }
+    .header-bot figcaption{  
+        top: 48vh;
     }
     main a:hover img{
         width: 87vw;
